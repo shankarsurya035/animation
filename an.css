@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    /* background: url('https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80'); */
+    /* background-size: cover; */
+    animation: col 11s ease-in;
+}
+section{
+    text-align: center;
+    width: 100vw;
+    
+}
+.image{
+    width: 120px;
+    height: 154px;
+    position: relative;
+    top: 16cm;
+    right: 2cm;
+    transform: translatex(40%);
+    animation: fly 10s ease-out;
+}
+.para{
+    position: relative;
+    top: 12cm;
+    right: 2cm;
+    transform: translateX(20%);
+    animation: fl 9s ease-in;
+}
+#pro{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+
+@keyframes fly{
+    0%{
+        transform: translate(40%,0);
+    }
+    100%{
+        transform: translate(40%,-500%);
+    }
+}
+
+@keyframes fl{
+    0%{
+        transform: translate(3%,0);
+    }
+    100%{
+        transform: translate(3%,-600%);
+    }
+}
+@keyframes col{
+    0%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+@media screen and (max-width:600px) {
+    section{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .image{
+        width: 120px;
+        height: 154px;
+        position: relative;
+        top: 16cm;
+        right: 1.2cm;
+        transform: translatex(40%);
+        animation: fly 10s ease-out;
+    }
+    .para{
+        position: relative;
+        top: 12cm;
+        right: 0cm;
+        transform: translateX(20%);
+        animation: fl 15s ease-out;
+    }#pro{
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        position: relative;
+        margin-right: 14px;
+        top: 1cm;
+    }
+    
+    
+    @keyframes fly{
+        0%{
+            transform: translate(40%,0);
+        }
+        100%{
+            transform: translate(40%,-500%);
+        }
+    }
+    
+    @keyframes fl{
+        0%{
+            transform: translate(3%,0);
+        }
+        100%{
+            transform: translate(3%,-800%);
+        }
+    }
+    @keyframes col{
+        0%{
+            background-color: aqua;
+        }
+        100%{
+            background-color: blue;
+        }
+    }
+}
